@@ -13,7 +13,7 @@ a{
 }
 
 .heading{
-    
+    font-size: 24px;
 padding: 5px;
 border-radius: 5px;
 background: #D1D8EC;
@@ -45,7 +45,7 @@ button:hover{
 
     color: #001965;
     background-color: #fff;
-    border: 2px solid #001965;
+    border: 3px solid #001965;
     font-weight: 700;
 }
 
