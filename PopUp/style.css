@@ -30,16 +30,13 @@ input{
     margin-right: auto;
 }
 #close{
-    margin-left: 790px;
+    margin-left: 250px;
     margin-bottom: 20px;
 }
 .submit-btn{
     margin-left: 265px;
 }
-.close{
-    cursor: pointer;
 
-}
 
 #box{
     padding: 50px;
@@ -53,6 +50,6 @@ input:active{
     border: solid 2px #000428;
 }
 .ip{
-    width: 500px;
+    width: 100%;
     padding: 10px;
 }
