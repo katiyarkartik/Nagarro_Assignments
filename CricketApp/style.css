@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    background-color: aliceblue;
+}
+.match-card{
+  
+  padding: 20px;
+  border: 1px solid rgb(2, 2, 111);
+  border-radius:5px ;
+  margin-top: 20px;
+  background-color: bisque;
+
+}
+.btn{
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    margin-top:20px ;
+}
+
+.btn button{
+    padding: 20px;
+   width: 100%;
+   border: 1px solid rgb(2, 2, 111);
+   color: white;
+   font-size: 24px;
+    border-radius: 5px;
+    background-color: rgb(2, 2, 111);
+    text-align: center;
+  
+}
+
+h1{
+    text-align: center;
+}
+.card{
+    padding: 20px;
+  
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+.teams{
+    display: flex;
+    background-color: bisque;
+   
+}
+.t{
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    font-weight: 700;
+    background-color: bisque;
+}
+p{
+    margin-bottom: 20px;
+    background-color: bisque;
+}
+.team1{
+    width: 50%;
+    font-size:36px;
+    color: rgb(192, 88, 88);
+    background-color: bisque;
+   
+   
+}
+.team2{
+    font-size:36px;
+    width: 50%;
+    color: rgb(71, 71, 182);
+    background-color: bisque;
+}
+.image{
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+   
+    
+}
+.t img{
+    width: 200px;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+   
+  
+}
+.details{
+    text-align: center;
+    margin-top: 20px;
+    font-size:30px;
+    color: rgb(37, 172, 37);
+    font-weight: 700;
+    background-color: bisque;
+}
+@media screen and (max-width: 480px) {
+    .teams{
+        display: block;
+    }
+    .team1{
+        width: 100%;
+
+    }
+    .team2{
+        width: 100%;
+    }
+  
+  }
