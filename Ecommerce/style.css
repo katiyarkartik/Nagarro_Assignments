@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #0e0f11;
+}
+input{
+    border:none;
+    outline: none;
+}
+li{
+    list-style: none;
+}
+.navbar{
+    display: flex;
+    background-color:rgb(255, 255, 255);
+    height: 100px;
+     color: white;
+    margin-bottom: 0;
+    background-color: #0e0f11;
+}
+
+.left{
+    width: 30%;
+    /* background-color: aqua; */
+    padding-left: 50px;
+}
+.logo{
+    width: 100px;
+    height: 50px;
+}
+.logo img{
+    width: 100px;
+    height: auto;
+}
+.center{
+    width: 40%;
+    /* background-color: aquamarine; */
+    
+}
+.center-nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+  
+
+}
+.center-nav li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 20px;
+
+
+}
+.right{
+    width: 30%;
+   
+    display: flex;
+    justify-content: flex-end;
+    padding: 7px 40px;
+  
+}
+.search{
+    padding: 0 30px;
+}
+.search input{
+    width: 250px;
+    border-radius: 50px;
+    border-style: none;
+   background-color: white;
+    padding: 5px;
+    font-size: 14px;
+    padding: 10px 20px;
+}
+.user{
+    padding: 10px 10px;
+}
+.cart{
+    padding: 10px 10px;
+}
+.gift{
+    padding: 10px 10px;
+}
+/* 
+
+Ecommerce- slider */
+.top-slider{
+    width: 100%;
+    height: auto;
+    
+}
+.carousel-item{
+    width: 100%;
+    height: 75vh;
+}
+.shop-now{
+    width: 100%;
+    height: 80px;
+ 
+   text-align: center;
+   color:white;
+   font-size: 30px;
+   font-weight: bold;
+
+}
+
+.products{
+padding-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 10px;
+}
+.product-card{
+    width: 350px;
+    height: 400px;
+    background-color: rgb(255, 255, 255);
+   border: 2px solid #eeeeee;
+    border-radius: 5px;
+}
+
+.product-img{
+    width: 95%;
+    height: 30vh;
+  
+    /* margin-left: auto;
+    margin-right: auto; */
+    margin: 5px auto;
+}
+.product-img img{
+    width: 100%;
+    height: 30vh;
+  
+}
+.product-info{
+    width: 95%;
+    margin: 10px auto;
+    background-color: rgb(255, 255, 255);
+    height: 20vh;
+    border-radius: 10px;
+}
+.product-title{
+    font-size: 20px;
+    font-weight: bold;
+
+}
