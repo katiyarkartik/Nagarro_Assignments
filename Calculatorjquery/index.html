@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--style sheet for how to create calculator program-->
+    <style>
+        body{
+            background-color: aquamarine;
+        }
+        h1{
+            text-align: center;
+        }
+        .calculator {
+            background-color: white;
+            width: 300px;
+            height: 380px;
+            border-style: solid;
+            border-width: 2px;
+            padding: 10px;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: antiquewhite;
+            border-radius: 10px;
+
+        }
+
+        .numBtn {
+            color: grey;
+            width: 80px;
+            height: 50px;
+            border-radius: 10px;
+        }
+
+        .opBtn {
+            background-color: grey;
+            color: white;
+            font-size: 24px;
+            width: 80px;
+            height: 50px;
+            border-radius: 10px;
+
+        }
+
+        .calBtn {
+            background-color: rgb(0, 255, 98);
+            color: white;
+            font-size: 24px;
+            width: 253px;
+            
+            height: 50px;
+            border-radius: 10px;
+
+        }
+
+        .clrBtn {
+            background-color: rgb(229, 38, 5);
+            color: white;
+            font-size: 18px;
+            width: 80px;
+            height: 50px;
+            border-radius: 10px;
+
+        }
+
+        .numtxt {
+            background-color: rgb(52, 190, 249);
+            color: white;
+            width: 250px;
+            font-size: 14;
+            height: 40px;
+            text-align: right;
+            border-radius: 10px;
+
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".numBtn").click(function () {
+                var value1 = $(this).val();
+                var value2 = $("#input").val();
+                $("#input").val(value2 + value1);
+            });
+
+            $(".clrBtn").click(function () {
+                $("#input").val("");
+            });
+
+            $(".opBtn").click(function () {
+                var value1 = $(this).val();
+                var value2 = $("#input").val();
+                $("#input").val(value2 + value1);
+            });
+            $(".calBtn").click(function () {
+                var value2 = eval($("#input").val());
+                $("#input").val(value2);
+            });
+        });
+    </script>
+</head>
+
+<body style="font-family:arial">
+    <h1>Calculator</h1>
+
+    <div class="calculator" align="center">
+        <table>
+            <tr>
+                <td colspan="3"><input type="text" class="numtxt" id="input"></td>
+            </tr>
+            <tr>
+                <td><button class="numBtn" value="1">1</button></td>
+                <td><button class="numBtn" value="2">2</button></td>
+                <td><button class="numBtn" value="3">3</button></td>
+            </tr>
+            <tr>
+                <td><button class="numBtn" value="4">4</button></td>
+                <td><button class="numBtn" value="5">5</button></td>
+                <td><button class="numBtn" value="6">6</button></td>
+            </tr>
+            <tr>
+                <td><button class="numBtn" value="7">7</button></td>
+                <td><button class="numBtn" value="8">8</button></td>
+                <td><button class="numBtn" value="9">9</button></td>
+            </tr>
+            <tr>
+                <td><button class="numBtn" value="0">0</button></td>
+                <td><button class="opBtn" value="/">/</button></td>
+                <td><button class="opBtn" value="*">*</button></td>
+            </tr>
+            <tr>
+                <td><button class="opBtn" value="-">-</button></td>
+                <td><button class="opBtn" value="+">+</button></td>
+                <td><button class="clrBtn" value="c">C</button></td>
+            </tr>
+            <tr>
+                <td colspan="3"><button class="calBtn" value="=">=</button></td>
+            </tr>
+        </table>
+    </div>
+</body>
+
+</html>

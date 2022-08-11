@@ -1,0 +1,28 @@
+*{
+    background-color: #000428;
+}
+h1{
+    text-align: center;
+    color: white;
+}
+.input{
+    display: flex;
+margin-top: 50px;
+    justify-content: center;
+}
+.input input{
+    width: 300px;
+    background-color: aliceblue;
+    padding: 10px;
+}
+.input .submit{
+    width: 100px;
+    background-color: rgb(255, 162, 0);
+    color: white;
+    font-weight: bold;
+}
+.container{
+    color: white;
+    text-align: center;
+    font-size: 24px;
+}
