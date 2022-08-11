@@ -12,15 +12,8 @@ app.get("/", (req, res) => {
   res.sendFile(__dirname + "/index.html");
 });
 
-// mongoose.connect(
-//   "mongodb+srv://admin:kartik0306@cluster0.2rkscpx.mongodb.net/crudApp",
-//   (err, client) => {
-//     if (err) return console.error(err);
-//     console.log("Connected to Database");
-//   }
-// );
 MongoClient.connect(
-  "mongodb+srv://"+process.env.API_KEY+"@cluster0.2rkscpx.mongodb.net/crudApp",
+  //mongodb uri
   { useUnifiedTopology: true }
 ).then((client) => {
   console.log("Connected to Database");
@@ -35,14 +28,13 @@ MongoClient.connect(
       .catch((error) => console.error(error));
   });
   //display all data from mongo
-    db.collection("contacts")
-      .find()
-      .toArray(function (err, results) {
-        if (err) throw err;
-        console.log(results);
-      });
-  });
-
+  db.collection("contacts")
+    .find()
+    .toArray(function (err, results) {
+      if (err) throw err;
+      console.log(results);
+    });
+});
 
 app.listen(5000, function () {
   console.log("server is running on port 3000...");
